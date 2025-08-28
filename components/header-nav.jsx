@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import Logo from './logo'
+import ModeToggle from './mode-toggel'  
 
 export default function HeaderNav() {
   return (
     <header className=" border-primary/20 bg-background sticky top-0 z-50 w-full border-b ">
-         <div className="container flex h-16 items-center">
+         <div className="container flex h-20  items-center">
             <Link href="/" className="flex items-center gap-2">
                 {/*Logo Component */}
                 <Logo className="h-10 w-10"/>
@@ -25,6 +26,7 @@ export default function HeaderNav() {
                 <Link href="/admin" className="hover:text-primary text-sm font-medium transition-colors">
                     Admin
                 </Link>
+            <ModeToggle/>
             </nav>
          </div>
     </header>
